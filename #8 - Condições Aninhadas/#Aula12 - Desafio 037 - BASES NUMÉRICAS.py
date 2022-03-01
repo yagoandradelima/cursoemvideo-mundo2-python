@@ -16,14 +16,18 @@ num = int(input('Digite um número: '))
 choice = str(input('Digite para qual modelo você quer converter: ')).strip()
 print()
 
-if choice == 1 or choice.upper() == 'BINARIO' or choice.upper() == 'BINÁRIO':
-    print(f'O número {num} convertido para binário é igual a: \033[7m{bin(num)}\033[m')
+#Dentro dos prints dos ifs, ele fatiou a string para ignorar os 0b,h e o.
 
-if choice == 2 or choice.upper() == 'HEXADECIMAL' or choice.upper() == 'HEX':
-    print(f'O número {num} convertido para Hexadecimal é igual a: \033[7m{hex(num)}\033[m')
+if choice == '1' or choice.upper() == 'BINARIO' or choice.upper() == 'BINÁRIO':
+    print(f'O número {num} convertido para binário é igual a: \033[7m{bin(num)[2:]}\033[m')
 
-if choice == 3 or choice.upper() == 'OCTAL' or choice.upper() == 'OCTA':
-    print(f'O número {num} convertido para Octal é igual a: \033[7m{oct(num)}\033[m')
+elif choice == '2' or choice.upper() == 'HEXADECIMAL' or choice.upper() == 'HEX':
+    print(f'O número {num} convertido para Hexadecimal é igual a: \033[7m{hex(num)[2:]}\033[m')
 
+elif choice == '3' or choice.upper() == 'OCTAL' or choice.upper() == 'OCTA':
+    print(f'O número {num} convertido para Octal é igual a: \033[7m{oct(num)[2:]}\033[m')
+
+else:
+    print('Não entendi o que foi digitado. Por favor, tente novamente.')
 print()
 print('Fim do Programa')
