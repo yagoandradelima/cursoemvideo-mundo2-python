@@ -3,6 +3,14 @@
 from random import choice
 from time import sleep
 
+#No código da atividade ele pede pro usuário escolher um número dentro do MENU no meu eu peço pro usuário digitar
+
+#Eu brinquei mais com o sleep pra brincar e deixar mais gamificado
+
+#Ele fez uma lista com 3 posições e usou o randint. Eu fiz um choice aleatório em uma lista
+
+#Eu fiz um big comando usando todas as condicionais onde eu venço de uma única vez. Fiz um little comando colocando a condicional simples de igualdade e deixei o big comando de vitória do PC embutido no else.
+
 lista = ['Pedra','Papel','Tesoura']
 
 print('*'*45)

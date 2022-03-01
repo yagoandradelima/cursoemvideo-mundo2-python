@@ -1,5 +1,5 @@
 #Aula012 - Desafio 043 - CALCULANDO IMC
-
+#Dá pra simplificar essas condições, só olhar nas atividades
 from math import pow
 
 altura = float(input('Digite sua altura: '))
@@ -22,3 +22,4 @@ elif imc > 30 and imc <=40:
 
 else:
     print('Você possui obesidade mórbida')
+    

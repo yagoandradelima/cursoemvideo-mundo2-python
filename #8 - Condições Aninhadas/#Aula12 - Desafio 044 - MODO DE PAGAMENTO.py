@@ -2,6 +2,9 @@
 
 from math import prod
 
+#A última opção precisa aceitar mais de 3x no parcelamento TAMBÉM
+#Meu código está levemente diferente. O dele tem menu bem estruturado
+#Em compensação, eu restrinjo mais erros de usuário e impeço inputs desnecessários
 
 prodPreco = float(input('Digite o valor do produto: R$ '))
 condPagt = str(input('Qual a forma de pagamento? ')).strip()
@@ -42,6 +45,7 @@ elif condPagt.upper() == 'CARTAO' or condPagt.upper() == 'CARTÃO':
         print('Parcelamento de 3x foi selecionado.')
         print(f'O valor total final do produto ficou: R$ {prodPreco:.2f}')
         print(f'O valor da parcela é = R$ {parcela:.2f}')
+
 else:
     print('Não consegui compreender esta opção. Por favor, tente novamente.')
 
