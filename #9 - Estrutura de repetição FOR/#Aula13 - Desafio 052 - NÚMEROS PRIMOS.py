@@ -1,5 +1,7 @@
 #Aula13 - Desafio 052
 
+#Meu código mostra os números primos, porém o do exercício usa menos linhas e condicionais. Voltar ao vídeo caso necessário reaver essa lógica
+
 num = int(input('Digite um número: '))
 
 if num == 1:
