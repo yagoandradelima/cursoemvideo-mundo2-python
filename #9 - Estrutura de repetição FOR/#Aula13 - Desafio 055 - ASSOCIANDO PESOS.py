@@ -17,7 +17,7 @@ for i in range(0, 5):
     
     else:
         #Deixei o else fazendo alguma coisa só pra ele não ficar triste kkkk
-        a += 1
+        print("Dados não computados")
 
 
 print(f'O maior peso digitado foi {maior}KGs e o menor foi {menor}KGs')

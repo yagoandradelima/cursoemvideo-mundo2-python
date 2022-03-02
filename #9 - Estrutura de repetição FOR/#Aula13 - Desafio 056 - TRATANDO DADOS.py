@@ -2,11 +2,13 @@
 
 b = 0
 somaIdade = 0
+maior = 0
+menor = 0
 
-for i in range(0, 4):
-    nome = str(input('Digite o nome da pessoa: ')).strip().lower()
-    idade = int(input('Digite a idade da pessoa: '))
-    sexo = str(input('Digite o sexo da pessoa [M/F]: ')).strip().upper()
+for i in range(1, 5):
+    nome = str(input(f'Digite o nome da {i}ª pessoa: ')).strip().lower()
+    idade = int(input(f'Digite a idade da {i}ª pessoa: '))
+    sexo = str(input(f'Digite o sexo da {i}ª pessoa [M/F]: ')).strip().upper()
     print()
     
     somaIdade += idade
@@ -28,6 +30,6 @@ mediaIdade = somaIdade / 4
 
 print()
 print(f'A Média de idade do grupo é {mediaIdade:.1f}')
-print(f'O homem mais velho possui {maior} anos e tem o nome de {n}!')
+print(f'O homem mais velho possui {maior} anos e tem o nome de {n.capitalize()}!')
 print(f'Existem {b} mulheres acima de 20 anos')
 print()
