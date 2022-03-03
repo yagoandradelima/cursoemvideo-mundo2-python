@@ -1,4 +1,4 @@
-#Aula 14 - Desafio 062 - RESOLUÇÃO
+#Aula14 - Desafio 062 - RESOLUÇÃO
 
 print('Gerador de PA')
 print('-=' * 10)
