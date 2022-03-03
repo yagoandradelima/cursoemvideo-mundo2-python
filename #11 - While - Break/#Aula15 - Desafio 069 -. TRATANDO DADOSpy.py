@@ -15,6 +15,7 @@ while True:
         if continua == 'S':
             if idade > 18:
                 maior += 1
+            #Por algum motivo esse contador não tá funcionando
             if idade < 20 and sexo == 'F':
                 idF += 1
             if sexo == 'M':
