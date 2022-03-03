@@ -13,7 +13,7 @@ for i in range(1, 5):
     
     somaIdade += idade
 
-    #Caso o primeiro valor seja o maior, o i == 0 armazena ele já que ele só armazenará algum valor caso o elif mais abaixo seja executado
+    #Caso o primeiro valor seja o maior, o i == 0 armazena ele, já que ele só armazenará algum valor caso o elif mais abaixo seja executado
     if i == 0:
         maior = menor = idade
         n = nome
