@@ -1,23 +1,18 @@
-#apenas teste
-
 #Aula15 - Desafio 069
-
 #contadores que designei
 idF = qtdM = maior = 0
-
 #Print do menu
 print('-'*25)
 print(' '*2, 'CADASTRE UMA PESSOA')
 print('-'*25)
-
 #Condicional com true pra executar até o break
 while True:
     #variáveis e prints do cadastro
     idade = int(input('Idade: '))
-    sexo = continua = ' ' 
+    sexo = continua = ' '
     while sexo not in 'MF':
         sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
-    print('-'*25) 
+    print('-'*25)
         #Condicional para continuar executando
     if int(idade) > 18:
         maior += 1

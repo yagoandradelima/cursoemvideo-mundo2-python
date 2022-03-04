@@ -1,5 +1,5 @@
 #Aula15 - Desafio 069
-
+#O código correto está no outro arquivo de desafio 069
 #contadores que designei
 idF = qtdM = maior = 0
 

@@ -6,8 +6,11 @@ print('\033[7mJOGO DO PAR OU ÍMPAR\033[m')
 print('-='*10)
 while True:
     nUser = int(input('Diga um valor: '))
+    #declaração de variável necessária para pode impedir que o programa dê erro caso o input do usuário não seja o que você programou para ser
     choice = ' '
+    #while com parametro para repetir até o usuário inputar o que estiver após o not in
     while choice not in 'PI':
+        #print do que será recebido
         choice = str(input('Par ou Impar [P/I]?')).upper().strip()[0]
     nPC = randint(0, 10)
     soma = nUser + nPC
