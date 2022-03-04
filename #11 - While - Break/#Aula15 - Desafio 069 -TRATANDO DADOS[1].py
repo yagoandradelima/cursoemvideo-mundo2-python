@@ -3,15 +3,19 @@
 #contadores que designei
 idF = qtdM = maior = 0
 
+#Print do menu
 print('-'*25)
 print(' '*2, 'CADASTRE UMA PESSOA')
 print('-'*25)
 
+#Condicional com true pra executar até o break
 while True:
+        #variáveis e prints do cadastro
         idade = int(input('Idade: '))
         sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
         print('-'*25) 
         continua = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
+        #Condicional para continuar executando
         if continua == 'S':
             if idade > 18:
                 maior += 1
