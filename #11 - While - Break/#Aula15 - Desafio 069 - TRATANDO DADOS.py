@@ -26,7 +26,5 @@ while True:
     print('-'*25)
     if continua == 'N':
         break
-    else:
-        continua == 'S'
 print('='*7, ' FIM DO PROGRAMA ', '='*7)
 print(f'{maior} pessoa(s) é(são) maiore(s) de idade \n{qtdM} Homem(ns) foi(foram) cadastrado(s) \n{idF} Mulher(es) possui(possuem) menos de 20 anos')
