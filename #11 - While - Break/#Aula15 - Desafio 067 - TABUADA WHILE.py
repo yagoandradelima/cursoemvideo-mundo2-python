@@ -1,6 +1,4 @@
 #Aula15 - Desafio 067
-
-
 while True:
     num = int(input('Digite um número: '))
     print('-'*25)

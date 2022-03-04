@@ -14,9 +14,10 @@ print('-'*25)
 while True:
     #variáveis e prints do cadastro
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
+    sexo = continua = ' ' 
+    while sexo not in 'MF':
+        sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
     print('-'*25) 
-    continua = 'S'
         #Condicional para continuar executando
     if int(idade) > 18:
         maior += 1
@@ -25,7 +26,9 @@ while True:
         idF += 1
     if sexo == 'M':
         qtdM += 1
-    continua = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
+    while continua not in 'SN':
+        continua = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
+    print('-'*25)
     if continua == 'N':
         break
     else:
